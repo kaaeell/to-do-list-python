@@ -12,7 +12,7 @@ Features:
 
 How to Use:
 1. Clone the repository.
-2. Run the program using: python main.py
+2. Run the program using: main.py
 3. Follow the menu:
    1- Add task to a list
    2- Mark task as complete
@@ -35,4 +35,5 @@ Notes:
 
 License:
 This project is open-source and free to use.
+
 
