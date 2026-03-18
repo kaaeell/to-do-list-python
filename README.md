@@ -144,4 +144,4 @@ Each task is stored as a JSON object:
 
 ## License
 
-Open-source and free to use. Go build something great.
+Open-source and free to use. Go build something great :)
