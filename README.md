@@ -1,44 +1,47 @@
 # ✅ 365 Days To-Do List
 
 A clean, human-friendly command-line To-Do app built in Python.
-No frameworks. No databases. Just you, your tasks, and a terminal.
+No frameworks. No databases. Just you, your tasks, and your terminal.
 
 ---
 
-## Features
+## 🚀 Features
 
-| Feature | Description |
-|---|---|
-| ➕ Add tasks | Name, priority, due date, note, and tags |
-| ✓  Mark done | Check off tasks with a timestamp |
-| ✏️  Edit tasks | Update any field on an existing task |
-| 🗑️  Delete tasks | Remove a task you no longer need |
-| 🔍 Search | Find tasks by name, note, or tag |
-| 🎛️  Filter | View by priority, status, due date, or tag |
-| 🔃 Sort | Arrange by priority, name, due date, or date added |
-| 🎯 Focus mode | See only your high & medium priority pending tasks |
-| 📊 Stats | Progress bar + full breakdown + tag cloud |
-| 📄 Export | Save your full list to a readable `.txt` file |
-| ↩️  Undo | Roll back the last change, up to 20 steps |
-| 🏷️  Tags | Label tasks with custom tags and filter by them |
-| 💾 Auto-save | Everything saves to `tasks.json` automatically |
+| Feature          | Description                                        |
+| ---------------- | -------------------------------------------------- |
+| ➕ Add tasks      | Name, priority, due date, note, and tags           |
+| ✓ Mark done      | Complete tasks with a timestamp                    |
+| ✏️ Edit tasks    | Update any field of an existing task               |
+| 🗑️ Delete tasks | Remove tasks you no longer need                    |
+| 🔍 Search        | Find tasks by name, note, or tag                   |
+| 🎛️ Filter       | View by priority, status, due date, or tag         |
+| 🔃 Sort          | Arrange by priority, name, due date, or date added |
+| 🎯 Focus mode    | Show only high & medium priority pending tasks     |
+| 📊 Stats         | Progress bar, breakdown, and tag overview          |
+| 📄 Export        | Save your task list to a readable `.txt` file      |
+| ↩️ Undo          | Revert the last change (up to 20 steps)            |
+| 🏷️ Tags         | Organize tasks with custom labels                  |
+| 💾 Auto-save     | Data is saved automatically to `tasks.json`        |
 
 ---
 
-## How to Use
+## 🧑‍💻 How to Use
 
-**1. Clone the repository**
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/your-username/365-days-todo.git
 cd 365-days-todo
 ```
 
-**2. Run the program**
+### 2. Run the program
+
 ```bash
 python main.py
 ```
 
-**3. Use the menu**
+### 3. Use the menu
+
 ```
   What do you want to do?
 
@@ -54,7 +57,7 @@ python main.py
 
 ---
 
-## Example Session
+## 💡 Example Session
 
 ```
   ✅ To-Do List
@@ -67,9 +70,10 @@ python main.py
   Priority: [1] High  [2] Medium  [3] Low  (default: medium)
   → 1
   Due date? (e.g. Jan 30 or leave blank): Mar 21
-  Add a note? (optional, press Enter to skip): Chapters 3–6
-  Tags? (e.g. work python — space or comma separated, or leave blank): school
-  Added! 'Study for exam' is on your list.  Tagged: #school
+  Add a note? (optional): Chapters 3–6
+  Tags? (e.g. work python): school
+
+  Added! 'Study for exam' is on your list. Tagged: #school
 
   → f
   ── 🎯 Focus Mode ────────────────────────────────────────
@@ -85,17 +89,17 @@ python main.py
 
 ---
 
-## Priority Levels
+## ⚡ Priority Levels
 
 | Symbol | Level  |
-|--------|--------|
+| ------ | ------ |
 | 🔴     | High   |
 | 🟡     | Medium |
 | 🟢     | Low    |
 
 ---
 
-## Task Data Structure
+## 🧱 Task Data Structure
 
 ```json
 {
@@ -112,50 +116,54 @@ python main.py
 
 ---
 
-## Notes
+## 📝 Notes
 
-- Tasks persist between sessions via `tasks.json` (auto-created in the same folder).
-- Export generates `tasks_export.txt` in the same folder.
-- Undo keeps up to 20 snapshots in memory — it resets when you quit.
-- Completed tasks render with ~~strikethrough~~ in the terminal.
-- No external dependencies — standard Python library only.
+* Tasks are stored in `tasks.json` (auto-created).
+* Export creates `tasks_export.txt`.
+* Undo keeps up to 20 steps (resets after closing the app).
+* Completed tasks appear with ~~strikethrough~~ in the terminal.
+* No external dependencies — only Python standard library.
 
 ---
 
-## Changelog
+## 📈 Changelog
 
 ### v4.0 — March 19, 2026
-- 🏷️  Added **Tags** — label tasks with custom tags (e.g. `#work`, `#school`), filter and search by them, see a tag cloud in Stats
-- 🎯 Added **Focus mode** `[f]` — strips away everything except pending high & medium tasks, so you see only what matters right now
-- 📄 Added **Export** `[e]` — writes your full task list to `tasks_export.txt` with all details formatted for reading
-- ↩️  Added **Undo** `[u]` — rolls back the last change (add, edit, delete, sort, clear); stacks up to 20 steps in memory
-- 💬 Smart launch message — app opens with a nudge based on how many high-priority tasks are waiting
-- 🔍 Search now also matches inside tags
+
+* 🏷️ Tags system (create, search, filter, stats)
+* 🎯 Focus mode for priority tasks
+* 📄 Export to `.txt`
+* ↩️ Undo system (20-step stack)
+* 💬 Smart startup message
+* 🔍 Search includes tags
 
 ### v3.0 — March 18, 2026
-- ✏️ Added **Edit task**
-- 🔍 Added **Search** (name + notes)
-- 🎛️ Added **Filter** (priority, status, due date)
-- 🔃 Added **Sort** (priority, name, due date, created)
-- 📊 Added **Stats** with progress bar
-- 💬 Optional notes per task
-- 🕐 Created / completed timestamps
+
+* ✏️ Edit tasks
+* 🔍 Search (name + notes)
+* 🎛️ Filter system
+* 🔃 Sorting options
+* 📊 Stats dashboard
+* 💬 Notes field
+* 🕐 Timestamps
 
 ### v2.0
-- 💾 JSON persistence
-- 🎨 Priority system with emoji indicators
-- 📅 Due dates
-- 🗑️ Delete tasks
-- 🧹 Bulk-clear completed tasks
+
+* 💾 JSON storage
+* 🎨 Priority system
+* 📅 Due dates
+* 🗑️ Delete tasks
+* 🧹 Clear completed
 
 ### v1.0
-- ➕ Add tasks
-- ✓  Mark as complete
-- 👀 View task list
-- Menu-driven loop
+
+* ➕ Add tasks
+* ✓ Mark complete
+* 👀 View list
 
 ---
 
-## License
+## 📜 License
 
-Open-source and free to use. Go build something great :)
+Open-source and free to use.
+Go build something great 🚀
